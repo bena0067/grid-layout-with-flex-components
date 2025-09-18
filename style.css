@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.emoji {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.emoji h2 {
+  margin: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.emoji a {
+  text-decoration: none;
+  background-color: #781BAA;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+.emojis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Emoji Card Styling ===== */
+.emoji {
+  display: flex;
+  flex-direction: column;       /* stack content vertically */
+  justify-content: space-between; /* pushes link to bottom */
+  background: #fff;
+  border: 1px solid #ccc;       /* matches the screenshot border */
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+/* ===== Card Content ===== */
+.emoji h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc; /* line under heading */
+}
+
+.icon {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.emoji p {
+  flex-grow: 1;                /* lets text take available space */
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* ===== Button Styling ===== */
+.emoji a {
+  align-self: center;           /* center horizontally */
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background: #6a0dad;          /* purple like screenshot */
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.emoji a:hover {
+  background: #4b0082;          /* darker purple on hover */
+}
