@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     display: flex;
-    flex-wrap: wrap;
+    order: 1;
 }
 
 .emojis {
@@ -46,6 +46,7 @@ h2 {
 
 .emoji {
   display: flex;
+  order: 1;
   flex-direction: column;       
   justify-content: space-between; 
   background: #fff;
@@ -70,7 +71,8 @@ h2 {
 }
 
 .emoji p {
-  flex-grow: 1;               
+  flex-grow: 1; 
+  order: 3;              
   text-align: left;
   margin-bottom: 1rem;
   color: #444;
@@ -79,6 +81,7 @@ h2 {
 
 
 .emoji a {
+    order: 4;
   align-self: left;
   border-radius: 10px;
   background: #6a0dad;         
